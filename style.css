@@ -1,0 +1,139 @@
+/* * {
+  border: 2px red solid;
+} */
+
+@font-face {
+  font-family: norse-bold;
+  src: url(/Norse-Bold.otf);
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container div {
+  flex: 1 1 0%;
+  /* padding: 0; */
+}
+
+.flex-container .form {
+  flex: 2 1 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container .form div {
+  flex: 1 1 auto;
+}
+.flex-container .form .details {
+  flex: 1.5 1 auto;
+  padding: 20px;
+  background-color: white;
+  color: white;
+}
+
+legend {
+  float: left;
+  writing-mode: vertical-lr;
+  font-size: 11px;
+}
+
+img {
+  max-height: 80vh;
+  max-width: 50vw;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  row-gap: 10px;
+}
+
+.names,
+.contact,
+.passwords {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.first-name,
+.last-name,
+.email,
+.handphone,
+.first-pass,
+.cfmpass {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.header {
+  padding: 15px;
+}
+
+.header h1 {
+  font-family: norse-bold, sans-serif;
+  font-size: 3rem;
+  color: blue;
+  text-align: center;
+}
+
+.header h1::before,
+.header h1::after {
+  background: #000;
+  color: white;
+  display: block;
+  font-size: 1rem;
+}
+
+.header h1::before {
+  content: "You thought things were dark.";
+}
+
+.header h1::after {
+  content: "They're about to get much darker.";
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-button {
+  width: 15rem;
+  height: 3rem;
+  border: 3px black solid;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.footer i {
+  font-size: large;
+}
+
+.footer figcaption {
+  text-align: end;
+}
+
+table {
+  display: none;
+  border: 2px white solid;
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+table caption {
+  font-size: 28px;
+}
+td,
+th {
+  border: 1px white solid;
+  text-align: center;
+  font-size: 36px;
+}
